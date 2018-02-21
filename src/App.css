@@ -17,6 +17,43 @@
 .App-intro {
   font-size: large; }
 
+.container {
+  height: 395px;
+  width: 600px;
+  border-radius: 8px;
+  background-color: #16C79E;
+  box-shadow: 0 22px 34px 0 rgba(0, 0, 0, 0.18); }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+.overlay {
+  height: 395px;
+  width: 600px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .overlay .share-btn {
+    box-sizing: border-box;
+    height: 61px;
+    width: 208px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: rgba(244, 246, 248, 0.1);
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center; }
+
+.container:hover .overlay {
+  display: block; }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg); }
