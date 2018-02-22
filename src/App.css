@@ -1,5 +1,6 @@
 .App {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Lato'; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -69,6 +70,22 @@
   background-color: rgba(0, 0, 0, 0.4); }
   .dialogBox.open {
     display: block; }
+
+.dialogBox-content {
+  background-color: #FFFFFF; }
+  .dialogBox-content button {
+    background-color: #FFFFFF;
+    border: none;
+    float: right;
+    padding: 20px; }
+
+.content-container {
+  padding: 35px 55px 40px 55px; }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 @keyframes App-logo-spin {
   from {

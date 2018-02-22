@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Lato';
 }
 
 .App-logo {
@@ -84,6 +85,27 @@
   &.open {
     display: block;
   }
+}
+
+.dialogBox-content {
+  background-color: #FFFFFF;
+
+  button {
+    background-color: #FFFFFF;
+    border: none;
+    float: right;
+    padding: 20px;
+  }
+}
+
+.content-container {
+  padding: 35px 55px 40px 55px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
