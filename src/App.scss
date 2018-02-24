@@ -88,11 +88,13 @@
 }
 
 .dialogBox-content {
+  border-radius: 4px;
   background-color: #FFFFFF;
 
   button {
     background-color: #FFFFFF;
-    border: none;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
     float: right;
     padding: 20px;
   }
@@ -112,6 +114,12 @@
   	font-weight: 500;
   	line-height: 19px;
   	text-align: center;
+    margin-right: 12px;
+  }
+
+  img {
+    vertical-align: middle;
+    margin: 0 5px;
   }
 }
 
@@ -153,11 +161,11 @@
 
 .right-col {
   margin-left: 15px;
-}
 
-.big-img {
-  width: 545px;
-  height: 358px;
+  .big-img {
+    width: 545px;
+    height: 358px;
+  }
 }
 
 .info {

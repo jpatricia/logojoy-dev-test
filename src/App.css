@@ -72,10 +72,12 @@
     display: block; }
 
 .dialogBox-content {
+  border-radius: 4px;
   background-color: #FFFFFF; }
   .dialogBox-content button {
     background-color: #FFFFFF;
-    border: none;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
     float: right;
     padding: 20px; }
 
@@ -90,7 +92,11 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
-    text-align: center; }
+    text-align: center;
+    margin-right: 12px; }
+  .social-medias img {
+    vertical-align: middle;
+    margin: 0 5px; }
 
 .main-content {
   display: flex;
@@ -123,10 +129,9 @@
 
 .right-col {
   margin-left: 15px; }
-
-.big-img {
-  width: 545px;
-  height: 358px; }
+  .right-col .big-img {
+    width: 545px;
+    height: 358px; }
 
 .info {
   height: 179px;
