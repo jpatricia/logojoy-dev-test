@@ -121,15 +121,34 @@
   justify-content: center;
 }
 
-.left-col {
+.active {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.left-images {
   display: flex;
   flex-direction: column;
-  img {
+  height: 130px;
+
+  .image-thmb {
     flex: 1;
     height: 120px;
     width: 120px;
     margin: 6.5px;
+    position: relative;
   }
+}
+
+.thmb-overlay {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .right-col {
@@ -139,14 +158,6 @@
 .big-img {
   width: 545px;
   height: 358px;
-
-  .active {
-    display: block;
-  }
-
-  .none {
-    display: none;
-  }
 }
 
 .info {

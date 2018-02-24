@@ -13,6 +13,7 @@ import logoThmb from './Images/logo-thmb.png';
 import shirtThmb from './Images/t-shirt-thmb.png';
 import smThmb from './Images/sm-thmb.png';
 import bcThmb from './Images/bc-thmb.png';
+import check from './Images/check.png';
 
 const socialMedia = [
   {name: 'twitter', img: twitter, link: 'https://twitter.com'},
@@ -92,7 +93,16 @@ class App extends Component {
                 <div className="left-col">
                   {images.map(i => {
                     return(
-                      <img src={i.thmb} onMouseOver={() => this.onHover(i.name)} onMouseOut={this.onMouseOut}/>
+                      <div className="left-images"
+                          onMouseOver={() => this.onHover(i.name)}
+                          onMouseOut={this.onMouseOut}>
+                        <img src={i.thmb} lassName="image-thmb"/>
+                        {i.name === 'logo' ? null :
+                          <div className={imageActive === i.name ? 'thmb-overlay active' : 'thmb-overlay none' }>
+                            <img src={check} className='center'/>
+                          </div>
+                        }
+                      </div>
                     )
                     })
                   }
