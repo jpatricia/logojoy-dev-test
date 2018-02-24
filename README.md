@@ -1,8 +1,8 @@
 # logojoy-dev-test
 
 This is a React app that is based on `create-react-app`.
-To run the app:  `npm start`.
-This app include SASS, so if there are any changes on `*.scss` and `*.js`, it will reload the app automatically.
+
+To run the app:  `npm install` (to install all the packages) then `npm start` (to run the app). It will automatically open `http://localhost:3000` in the browser. This app include SASS, so if there are any changes on `*.scss` and `*.js`, it will reload the app and the webpage automatically.
 
 Cases that are included in the dialog box image thumbnails on the left:
 1. If hover on the image thumbnail, it will open the image on the right column, and it will go back to logo image by default as mouse is out of the image thumbnail.
