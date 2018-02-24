@@ -34,9 +34,12 @@ class App extends Component {
     super();
     this.state = {
       dialogOpen: false,
-      imageActive: 'logo'
+      imageActive: 'logo',
+      imageSelected: 'logo',
+      selected: false
     };
     this.shareDialogBox = this.shareDialogBox.bind(this);
+    this.onClick = this.onClick.bind(this);
     this.onHover = this.onHover.bind(this);
     this.onMouseOut = this.onMouseOut.bind(this);
   }
@@ -47,6 +50,21 @@ class App extends Component {
     });
   }
 
+  onClick(imgName) {
+    let selected = !this.state.selected;
+    let imageSelected = 'logo'; // default to logo
+    if(this.state.imageSelected != imgName) {
+      // a new image is selected by onClick
+      selected = true;
+      imageSelected = imgName;
+    }
+    this.setState({
+      imageActive: imgName,
+      imageSelected: imageSelected,
+      selected: selected
+    })
+  }
+
   onHover(imgName) {
     this.setState ({
       imageActive: imgName
@@ -54,9 +72,11 @@ class App extends Component {
   }
 
   onMouseOut() {
-    this.setState ({
-      imageActive: 'logo'
-    });
+    if(!this.state.selected) {
+      this.setState ({
+        imageActive: 'logo'
+      });
+    }
   }
 
   render() {
@@ -94,6 +114,7 @@ class App extends Component {
                   {images.map(i => {
                     return(
                       <div className="left-images"
+                          onClick={() => this.onClick(i.name)}
                           onMouseOver={() => this.onHover(i.name)}
                           onMouseOut={this.onMouseOut}>
                         <img src={i.thmb} lassName="image-thmb"/>
