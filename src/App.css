@@ -82,10 +82,66 @@
 .content-container {
   padding: 35px 55px 40px 55px; }
 
+.social-medias {
+  margin-bottom: 25px;
+  height: 35px; }
+  .social-medias span {
+    color: #090B17;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center; }
+
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+.left-col {
+  display: flex;
+  flex-direction: column; }
+  .left-col img {
+    flex: 1;
+    height: 120px;
+    width: 120px;
+    margin: 6.5px; }
+
+.right-col {
+  margin-left: 15px; }
+
+.big-img {
+  width: 545px;
+  height: 358px; }
+  .big-img .active {
+    display: block; }
+  .big-img .none {
+    display: none; }
+
+.info {
+  height: 179px;
+  border: 1px solid #D4DBE8;
+  border-radius: 0 0 4px 4px;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding-left: 25px; }
+  .info h2 {
+    color: #090B17;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px; }
+  .info div {
+    width: 495px;
+    color: #535971;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 20px; }
+  .info a {
+    color: #4F6DF5;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-decoration: none; }
 
 @keyframes App-logo-spin {
   from {
